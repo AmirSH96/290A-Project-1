@@ -1,3 +1,4 @@
+# Presentation link: https://docs.google.com/videos/u/0/d/1S5Nh2gUmm-7bIDSSCVMxLXWdoGhODzroPLY48qjKS14/play?usp=chrome_extension_sharing
 # Chicago and San Diego Weather Comparison
 
 This project compares weather patterns in Chicago and San Diego and tests how neural-network width and L2 regularization affect seasonal temperature estimates. The analysis appears after Section 11 in [weather_era5_xarray.ipynb](weather_era5_xarray.ipynb).
