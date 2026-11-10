@@ -1,0 +1,11 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/idgatl","index":0,"layout":{"id":"ly/ahkn6hk7","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/9kr69wbq","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Chicago and San Diego weather patterns","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/mhgnyhsf","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"ERA5 course data, 2009–2010. Notebook Section 11, cell 59.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/nipo7mt0","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"1","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"sh/wni54rah","kind":"textbox","position":{"left":60,"top":176,"width":490,"height":160},"text":"How do the cities differ?\nWhich temperature models\nwork best for each city?","style":{"fontSize":33,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/xor6dwb2","kind":"textbox","position":{"left":60,"top":380,"width":490,"height":98},"text":"730 daily means across 2009–2010\nNearest ERA5 grid point to each city","style":{"fontSize":25,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/al0n21sb","kind":"textbox","position":{"left":60,"top":506,"width":510,"height":84},"text":"Initial exploration included temperature,\nprecipitation, pressure and wind.","style":{"fontSize":25,"typeface":"Arial","color":"#17324A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/vm9obmtw","kind":"textbox","position":{"left":60,"top":616,"width":520,"height":40},"text":"Daily rainfall totals need a unit check.","style":{"fontSize":21,"typeface":"Arial","color":"#996013","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/hw36hczu","kind":"image","position":{"left":625.41,"top":132,"width":569.17,"height":520},"fit":"contain","alt":"Chicago vs San Diego weather variables"}
+]}

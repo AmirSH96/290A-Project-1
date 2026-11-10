@@ -1,0 +1,240 @@
+{
+  "scope": "Section 11 onward, preserving the first 13 original graph groupings and adding two concluding slides",
+  "main_slide_count": 15,
+  "total_seconds": 300,
+  "spoken_word_count": 658,
+  "approximate_words_per_minute": 131.6,
+  "slides": [
+    {
+      "number": 1,
+      "title": "Chicago and San Diego weather comparison",
+      "seconds": 15,
+      "graph_reference": "Original notebook cell 59, all temperature, precipitation, pressure, and wind panels together",
+      "takeaway": "Explore the two cities before choosing a modeling question",
+      "on_slide": [
+        "Daily mean ERA5 data, 2009–2010",
+        "Nearest grid point to each city"
+      ],
+      "notes": "I began by comparing Chicago and San Diego across temperature, precipitation, pressure, and wind. I used ERA5 daily means from 2009 and 2010 at the nearest grid points, exploring patterns before choosing a modeling question.",
+      "start_seconds": 0,
+      "end_seconds": 15,
+      "spoken_word_count": 35
+    },
+    {
+      "number": 2,
+      "title": "Temperature patterns and sample maxima",
+      "seconds": 20,
+      "graph_reference": "Original notebook cell 60, city temperature comparison and marked study-region maximum date",
+      "takeaway": "Chicago has much greater temperature variation in this sample",
+      "on_slide": [
+        "Temperature SD: Chicago 10.90°C, San Diego 2.77°C",
+        "City maxima are daily means within these files"
+      ],
+      "notes": "Chicago showed much greater temperature variation: a standard deviation of about 10.9 degrees Celsius, compared with 2.8 in San Diego. The highest city daily means were about 28.3 and 24.6 degrees. These are sample maxima, and two years do not establish a climate trend.",
+      "start_seconds": 15,
+      "end_seconds": 35,
+      "spoken_word_count": 48
+    },
+    {
+      "number": 3,
+      "title": "Exploring a precipitation event",
+      "seconds": 15,
+      "graph_reference": "Original notebook cell 61, stormiest-day precipitation and wind exploration",
+      "takeaway": "Rainfall conclusions remain limited by the precipitation scaling",
+      "on_slide": [
+        "Study-region average uses a rectangular domain",
+        "Precipitation daily-total scaling remains unvalidated"
+      ],
+      "notes": "I examined wind on the day with the largest displayed regional precipitation value. That average covers a rectangular study region. The precipitation scaling still needs validation as daily rainfall totals, which limits the rainfall conclusions.",
+      "start_seconds": 35,
+      "end_seconds": 50,
+      "spoken_word_count": 35
+    },
+    {
+      "number": 4,
+      "title": "Predicting tomorrow’s temperature",
+      "seconds": 25,
+      "graph_reference": "Original notebook cell 62, next-day forecasting comparison",
+      "takeaway": "A neural network did not consistently beat linear regression",
+      "on_slide": [
+        "Current and lagged weather features predict tomorrow",
+        "Earlier 75% train, later 25% test"
+      ],
+      "notes": "I first used current and lagged weather to predict tomorrow’s temperature, training on the earlier seventy-five percent of dates. Chicago’s linear and neural models both scored about 1.46 degrees. San Diego’s linear model scored 0.63, compared with 0.68 for the network. This used one chronological test split.",
+      "start_seconds": 50,
+      "end_seconds": 75,
+      "spoken_word_count": 50
+    },
+    {
+      "number": 5,
+      "title": "Chicago seasonal prediction",
+      "seconds": 15,
+      "graph_reference": "Original notebook cell 63, first image: Chicago training and 2010 evaluation side by side",
+      "takeaway": "Day of year predicts seasonal temperature, a different target from tomorrow’s weather",
+      "on_slide": [
+        "Train on 2009, evaluate on 2010",
+        "Chicago linear/NN MAE: 8.91/2.92°C"
+      ],
+      "notes": "I then asked whether day of year alone could capture the seasonal pattern. Training on 2009 and evaluating on 2010, Chicago’s error fell from 8.91 degrees with a straight line to 2.92 with the network.",
+      "start_seconds": 75,
+      "end_seconds": 90,
+      "spoken_word_count": 37
+    },
+    {
+      "number": 6,
+      "title": "San Diego seasonal prediction",
+      "seconds": 15,
+      "graph_reference": "Original notebook cell 63, second image: San Diego training and 2010 evaluation side by side",
+      "takeaway": "The network’s advantage is smaller in San Diego",
+      "on_slide": [
+        "Same seasonal question and year split",
+        "San Diego linear/NN MAE: 1.68/1.48°C"
+      ],
+      "notes": "I repeated the seasonal experiment for San Diego. Error fell from 1.68 degrees with the straight line to 1.48 with the network. The improvement was smaller here.",
+      "start_seconds": 90,
+      "end_seconds": 105,
+      "spoken_word_count": 29
+    },
+    {
+      "number": 7,
+      "title": "Seasonal prediction in both cities",
+      "seconds": 10,
+      "graph_reference": "Original notebook cell 64, combined Chicago and San Diego seasonal comparison",
+      "takeaway": "An alternative view of the same seasonal experiment",
+      "on_slide": [
+        "Same results as the previous two city views",
+        "Different city patterns produce different model gains"
+      ],
+      "notes": "This combined view shows the same seasonal experiment as the previous two slides. It makes the larger improvement in Chicago easier to compare.",
+      "start_seconds": 105,
+      "end_seconds": 115,
+      "spoken_word_count": 23
+    },
+    {
+      "number": 8,
+      "title": "Monthly validation: 5, 10 and 20 neurons",
+      "seconds": 25,
+      "graph_reference": "month_end_results/seasonal_fits.png, original four-panel figure",
+      "takeaway": "Monthly holdouts evaluate gaps throughout the 2009 seasonal curve",
+      "on_slide": [
+        "Final seven days of every month held out",
+        "281 training days, 84 validation days"
+      ],
+      "notes": "To compare network settings across all seasons, I held out the final seven days of every month in 2009. That left 281 training days and 84 validation days. These curves compare five, ten, and twenty neurons on identical dates. This changes the evaluation question, so lower errors cannot be compared directly with the 2010 results.",
+      "start_seconds": 115,
+      "end_seconds": 140,
+      "spoken_word_count": 55
+    },
+    {
+      "number": 9,
+      "title": "Training and validation errors",
+      "seconds": 20,
+      "graph_reference": "month_end_results/training_validation_mae.png, original two-city paired-bar figure",
+      "takeaway": "Lowest validation MAE occurs at different widths for the two cities",
+      "on_slide": [
+        "Chicago: 10 neurons, MAE 2.498°C",
+        "San Diego: 20 neurons, MAE 1.183°C"
+      ],
+      "notes": "The bars compare training and validation error. More neurons improved training fit, but did not consistently improve validation. Chicago’s lowest validation error was about 2.50 degrees with ten neurons, almost tied with twenty. San Diego’s was about 1.18 with twenty. I chose settings using validation error.",
+      "start_seconds": 140,
+      "end_seconds": 160,
+      "spoken_word_count": 48
+    },
+    {
+      "number": 10,
+      "title": "Comparing single networks and ensembles",
+      "seconds": 15,
+      "graph_reference": "week6_ensemble_results/ensemble_comparison.png, original six-panel figure with member spread",
+      "takeaway": "The ensemble did not lower either city’s best single-model MAE",
+      "on_slide": [
+        "Five fixed random seeds per network size",
+        "Member spread measures disagreement between fits"
+      ],
+      "notes": "I averaged five networks with different initial weights to test whether predictions became more reliable. The ensemble did not lower either city’s best single-model MAE. The shaded spread shows disagreement between fits, not calibrated weather uncertainty.",
+      "start_seconds": 160,
+      "end_seconds": 175,
+      "spoken_word_count": 36
+    },
+    {
+      "number": 11,
+      "title": "Effect of L2 penalty strength",
+      "seconds": 20,
+      "graph_reference": "week6_regularization_results/alpha_validation_mae.png, original two-city figure",
+      "takeaway": "Stronger regularization does not steadily reduce validation error",
+      "on_slide": [
+        "Alpha controls the penalty on large weights",
+        "One fitted solution does not establish a universal ranking"
+      ],
+      "notes": "I also tested six L2 penalty strengths. Alpha penalizes large weights, but stronger penalties did not steadily lower validation error. San Diego’s twenty-neuron model spiked at one setting. Different penalties can lead training to different fits, and initialization can change the ranking.",
+      "start_seconds": 175,
+      "end_seconds": 195,
+      "spoken_word_count": 42
+    },
+    {
+      "number": 12,
+      "title": "Seasonal fits before and after L2 tuning",
+      "seconds": 15,
+      "graph_reference": "week6_regularization_results/seasonal_comparison.png, original six-panel figure",
+      "takeaway": "Four models retain their original penalty and overlapping curves",
+      "on_slide": [
+        "Original models already use alpha 0.0001",
+        "Compare each width with its validation-selected penalty"
+      ],
+      "notes": "These panels compare original fits with their validation-selected penalties. The originals already used weak L2 regularization. Four models kept their original setting, so their curves overlap. Stronger penalties did not consistently improve every model.",
+      "start_seconds": 195,
+      "end_seconds": 210,
+      "spoken_word_count": 34
+    },
+    {
+      "number": 13,
+      "title": "Before and after L2: error comparison",
+      "seconds": 20,
+      "graph_reference": "week6_regularization_results/before_after_l2.png, original four-panel training and validation figure",
+      "takeaway": "San Diego’s 10-neuron model improves, while overall MAE winners stay unchanged",
+      "on_slide": [
+        "San Diego 10: validation MAE 1.283 to 1.209°C",
+        "Training MAE 1.151 to 1.189°C",
+        "Independent evaluation is needed to confirm the gain"
+      ],
+      "notes": "The clearest L2 change was San Diego’s ten-neuron network. Validation error fell from about 1.28 to 1.21 degrees, while training error rose slightly. A closer training fit was therefore unnecessary for better predictions on these held-out weeks.",
+      "start_seconds": 210,
+      "end_seconds": 230,
+      "spoken_word_count": 39
+    },
+    {
+      "number": 14,
+      "title": "Conclusions: what we tested and learned",
+      "seconds": 35,
+      "graph_reference": "Concluding synthesis of the preceding city comparisons and model experiments",
+      "takeaway": "The benefit of model complexity depends on the city and prediction task",
+      "on_slide": [
+        "The neural network does not consistently improve the next-day forecast",
+        "Seasonal curvature is learned better than a straight line",
+        "Monthly validation selects 10 neurons for Chicago and 20 for San Diego",
+        "L2 improves San Diego 10-neuron validation MAE by 5.8%, but overall MAE winners stay unchanged",
+        "The ensemble does not lower the best single-model MAE"
+      ],
+      "notes": "The results depend on the task and city. Chicago showed stronger seasonal variability. The neural network learned seasonal curvature better than a straight line, but did not consistently improve the next-day forecast. Monthly validation selected ten neurons for Chicago and twenty for San Diego. L2 reduced San Diego’s ten-neuron validation MAE by about 5.8 percent, but the lowest-MAE overall choices stayed unchanged. Ensembles also failed to beat the best single-model MAE.",
+      "start_seconds": 230,
+      "end_seconds": 265,
+      "spoken_word_count": 72
+    },
+    {
+      "number": 15,
+      "title": "Limitations and future exploration",
+      "seconds": 35,
+      "graph_reference": "Limitations and next steps for the preceding analyses",
+      "takeaway": "Independent evaluation, stronger baselines, and data checks are needed to confirm conclusions",
+      "on_slide": [
+        "L2 tuning uses 2009 and one initialization: repeat seeds and evaluate untouched years",
+        "Validation reuse and correlated days: separate final test and chronological forecasting evaluation",
+        "Calendar-only inputs and weak linear baseline: sine/cosine seasonal features and richer weather predictors",
+        "Two-year climate sample and unvalidated rainfall totals: longer records and unit checks"
+      ],
+      "notes": "The monthly results reconstruct 2009 gaps. One training year and one L2 initialization limit robustness. Reusing validation for selection and reporting, alongside related neighboring days, requires a separate final test. I would repeat seeds, use untouched years, and evaluate forecasts chronologically. Calendar-only inputs and the weak straight-line baseline motivate sine and cosine features and richer weather predictors. Two years cannot establish climate trends, and rainfall totals need unit checks. Longer records would strengthen these conclusions.",
+      "start_seconds": 265,
+      "end_seconds": 300,
+      "spoken_word_count": 75
+    }
+  ]
+}

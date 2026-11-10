@@ -1,0 +1,10 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/lx9y9j","index":1,"layout":{"id":"ly/dsn6dc7y","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/x4bmxsvi","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Contrasting temperature patterns","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ahk32dcr","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"Notebook cell 60. Statistics describe daily mean temperatures in this two-year sample.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/bit4vidc","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"2","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"sh/of2l03u1","kind":"textbox","position":{"left":60,"top":128,"width":560,"height":45},"text":"Chicago temperature SD: 10.90 C","style":{"fontSize":27,"typeface":"Arial","color":"#2375A6","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/pgbmt8vm","kind":"textbox","position":{"left":660,"top":128,"width":560,"height":45},"text":"San Diego temperature SD: 2.77 C","style":{"fontSize":27,"typeface":"Arial","color":"#D77D35","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/zahkbe58","kind":"image","position":{"left":126.98,"top":194,"width":1026.05,"height":398},"fit":"contain","alt":"US-region and city hottest days"},
+{"id":"sh/ne94ridg","kind":"textbox","position":{"left":60,"top":604,"width":1160,"height":66},"text":"The source graph’s “US average” is the rectangular study-region average.\nQuoted maxima are daily means. The red line marks the study-region maximum date.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

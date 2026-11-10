@@ -1,0 +1,8 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/3zo68o","index":16,"layout":{"id":"ly/ahkn6hk7","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/p4fqhsv6","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Appendix 7: Original and selected L2 fits","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/21ormdwf","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"week6_regularization_results/seasonal_comparison.png","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/32x8fid0","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"17","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/tk7uxoja","kind":"image","position":{"left":130,"top":132,"width":1020,"height":480},"fit":"contain","alt":"week6_regularization_results/seasonal_comparison.png"},
+{"id":"sh/h0vqdsfu","kind":"textbox","position":{"left":60,"top":630,"width":1160,"height":46},"text":"Each width compares the original penalty with a penalty selected using validation MAE.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

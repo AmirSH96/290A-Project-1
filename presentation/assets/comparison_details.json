@@ -1,0 +1,162 @@
+{
+  "details": [
+    {
+      "title": "Temperature comparison",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_temperature_labeled.png",
+      "width": 1389,
+      "height": 342,
+      "sha256": "689b20a7e336b257c4384f6a1b0f566d5e708dd8b54ff720ba48f8a51e699b7f",
+      "derived_from": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+      "source_sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c",
+      "crop_bounds": [
+        0,
+        0,
+        1389,
+        315
+      ],
+      "original_crop_asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_temperature.png",
+      "original_crop_sha256": "96cc4e26f99643353d4c9250306c149bde0748c23bc8e2b174681091c0ac3c03",
+      "composition": {
+        "type": "Original full-row crop with the original shared date-label strip appended below",
+        "base_crop_bounds": [
+          0,
+          0,
+          1389,
+          315
+        ],
+        "date_label_strip_source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+        "date_label_strip_source_sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c",
+        "date_label_strip_bounds": [
+          0,
+          1242,
+          1389,
+          1269
+        ],
+        "date_label_strip_paste_position": [
+          0,
+          315
+        ],
+        "date_label_strip_dimensions": [
+          1389,
+          27
+        ],
+        "notes": "Exact source date-label pixels only; strip begins below wind data and axis tickmarks. Shared x-axis positions are unchanged. No resampling or invented labels."
+      }
+    },
+    {
+      "title": "Precipitation comparison",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_precipitation_labeled.png",
+      "width": 1389,
+      "height": 341,
+      "sha256": "f094c0cb8965c4fae334f7e4522a6d1f56d47faa97bbee16fefb3beeec7ed02d",
+      "derived_from": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+      "source_sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c",
+      "crop_bounds": [
+        0,
+        313,
+        1389,
+        627
+      ],
+      "original_crop_asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_precipitation.png",
+      "original_crop_sha256": "360821af9f211ea0d32bb8fa4345fe78cd26e11e4e337aacf89f58ebabaee4a4",
+      "composition": {
+        "type": "Original full-row crop with the original shared date-label strip appended below",
+        "base_crop_bounds": [
+          0,
+          313,
+          1389,
+          627
+        ],
+        "date_label_strip_source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+        "date_label_strip_source_sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c",
+        "date_label_strip_bounds": [
+          0,
+          1242,
+          1389,
+          1269
+        ],
+        "date_label_strip_paste_position": [
+          0,
+          314
+        ],
+        "date_label_strip_dimensions": [
+          1389,
+          27
+        ],
+        "notes": "Exact source date-label pixels only; strip begins below wind data and axis tickmarks. Shared x-axis positions are unchanged. No resampling or invented labels."
+      }
+    },
+    {
+      "title": "Pressure comparison",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_pressure_labeled.png",
+      "width": 1389,
+      "height": 340,
+      "sha256": "0cffeb3eb4c4df30df54eb283efa23ceaddf9422e263cb80f1c8488813ec8a48",
+      "derived_from": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+      "source_sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c",
+      "crop_bounds": [
+        0,
+        626,
+        1389,
+        939
+      ],
+      "original_crop_asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_pressure.png",
+      "original_crop_sha256": "3348e27349546015c845710303b64bd5948afefc4ab148576f7ae20d935296d8",
+      "composition": {
+        "type": "Original full-row crop with the original shared date-label strip appended below",
+        "base_crop_bounds": [
+          0,
+          626,
+          1389,
+          939
+        ],
+        "date_label_strip_source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+        "date_label_strip_source_sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c",
+        "date_label_strip_bounds": [
+          0,
+          1242,
+          1389,
+          1269
+        ],
+        "date_label_strip_paste_position": [
+          0,
+          313
+        ],
+        "date_label_strip_dimensions": [
+          1389,
+          27
+        ],
+        "notes": "Exact source date-label pixels only; strip begins below wind data and axis tickmarks. Shared x-axis positions are unchanged. No resampling or invented labels."
+      }
+    },
+    {
+      "title": "Wind comparison",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_wind.png",
+      "width": 1389,
+      "height": 331,
+      "sha256": "fdd715419e1f1b64130f73d2c654a40f9b0a453335a457584f093a1018cf17f1",
+      "derived_from": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+      "source_sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c",
+      "crop_bounds": [
+        0,
+        938,
+        1389,
+        1269
+      ]
+    }
+  ],
+  "source_path": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+  "source_sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c",
+  "source_dimensions": [
+    1389,
+    1269
+  ],
+  "notes": [
+    "Temperature, precipitation, and pressure detailassets retain their exact original full-row crop and append only the original shared date-label strip from the wind row.",
+    "The shared date-label strip uses original sourcebounds [0,1242,1389,1269]; it contains no winddata pixels, plotborder, or axis tickmarks.",
+    "All x-axis positions align because sourcecell59 uses shared x axes. Every row spans2009\u20132010; the original axis includes a2011 boundary tick.",
+    "No resampling, invented labels, or sourceplot edits occurred. The original rowcrops and wind detailasset are unchanged.",
+    "The shared legend appears only on the temperature row: blue=daily, orange=monthly mean.",
+    "Original precipitation labels/scaling are retained; daily rainfall totals remain unvalidated."
+  ]
+}

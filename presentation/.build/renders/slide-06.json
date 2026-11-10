@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/hpcb85","index":5,"layout":{"id":"ly/ahkn6hk7","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/wvqhcbe5","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Monthly validation and network size","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/vuh036xk","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"month_end_results/model_comparison.csv. Same dates, preprocessing and seed for every width.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/at8za1wf","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"6","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"sh/9szi1wfu","kind":"textbox","position":{"left":60,"top":125,"width":1160,"height":44},"text":"Hold out the final seven days of each month in 2009","style":{"fontSize":28,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/8rqh8ry9","kind":"textbox","position":{"left":60,"top":175,"width":1160,"height":40},"text":"281 training days and 84 validation days","style":{"fontSize":25,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"ch/7qpovetw","kind":"chart","position":{"left":60,"top":232,"width":825,"height":365},"chartType":"bar"},
+{"id":"sh/mpoz6hg3","kind":"textbox","position":{"left":935,"top":260,"width":285,"height":145},"text":"Chicago\n10 neurons\n2.498 C","style":{"fontSize":30,"typeface":"Arial","color":"#2375A6","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/to3id0fy","kind":"textbox","position":{"left":935,"top":440,"width":285,"height":145},"text":"San Diego\n20 neurons\n1.183 C","style":{"fontSize":30,"typeface":"Arial","color":"#D77D35","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/sna14ved","kind":"textbox","position":{"left":60,"top":632,"width":1160,"height":44},"text":"This split tests missing dates within 2009. It does not provide a direct comparison with the 2010 scores.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

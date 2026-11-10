@@ -1,0 +1,8 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/s4birc","index":17,"layout":{"id":"ly/wfq9sj65","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/tg3ahwjq","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Appendix 8: Temperature comparison","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/6tsr61kf","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"Detail from notebook cell 59. Both city panels and their original axes are preserved.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ru1sf610","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"18","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/xcne103q","kind":"image","position":{"left":60,"top":242.47,"width":1160,"height":263.07},"fit":"contain","alt":"Temperature comparison"},
+{"id":"sh/5sjadwju","kind":"textbox","position":{"left":60,"top":618,"width":1160,"height":56},"text":"Blue: daily values. Orange: monthly means. All series cover 2009–2010.\nEnlarged complete variable row from the original Section 11 city comparison, 2009–2010.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

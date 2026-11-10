@@ -1,0 +1,11 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/ba78ch","index":4,"layout":{"id":"ly/dsn6dc7y","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/x8zups76","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Learning the seasonal temperature pattern","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/al8bedof","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"Notebook cells 63–64. Chicago view shown. The San Diego view follows in the appendix.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/bmhcnip0","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"5","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ojqtc36p","kind":"textbox","position":{"left":60,"top":128,"width":1160,"height":52},"text":"Day of year predicts same-day temperature. Train on 2009, evaluate on 2010.","style":{"fontSize":26,"typeface":"Arial","color":"#17324A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/43atg7mh","kind":"image","position":{"left":60,"top":198.52,"width":1160,"height":350.97},"fit":"contain","alt":"Chicago seasonal training/test fit"},
+{"id":"sh/2hobadoj","kind":"textbox","position":{"left":60,"top":573,"width":560,"height":50},"text":"Chicago MAE: 8.91 to 2.92 C","style":{"fontSize":29,"typeface":"Arial","color":"#2375A6","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/nixcjip4","kind":"textbox","position":{"left":660,"top":573,"width":560,"height":50},"text":"San Diego MAE: 1.68 to 1.48 C","style":{"fontSize":29,"typeface":"Arial","color":"#D77D35","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/8fado76t","kind":"textbox","position":{"left":60,"top":634,"width":1160,"height":40},"text":"Both compare straight-line regression with a 10-neuron network using calendar input only.","style":{"fontSize":23,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

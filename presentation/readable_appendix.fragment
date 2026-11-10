@@ -1,0 +1,136 @@
+// Supporting figures use complete axes and large legends on every slide.
+let appendixNumber = 0;
+const representation = [];
+function appendix(title, source, note) {
+  appendixNumber += 1;
+  return newSlide(`Appendix ${appendixNumber}: ${title}`, note, source, true);
+}
+async function appendixImage(entry, title, caption) {
+  const s = appendix(title, path.relative(PROJECT, entry.asset_path), caption);
+  await image(s, entry, { left: 60, top: 145, width: 1160, height: 455 });
+  if (entry.derived_from) imageUsage[imageUsage.length - 1].derivative_of = entry.derived_from;
+  text(s, caption, 60, 617, 1160, 60, 22, C.muted);
+}
+
+// Cells 63 and 64 show the same city experiments in separate and combined layouts.
+// Keeping the two city views preserves the graphs without a tiny duplicate montage.
+await appendixImage(notebookFigure(63, 1), 'San Diego seasonal model',
+  '2009 training and 2010 evaluation. This is the San Diego view of the same experiment shown in slide 5.');
+representation.push({ source: notebookFigure(64).asset_path, represented_by: ['slide 5 Chicago view', 'slide 11 San Diego view'], reason: 'Equivalent separate city plots of the same experiment' });
+
+for (const city of ['Chicago', 'San Diego']) {
+  for (const split of ['Training', 'Validation']) {
+    const actual = monthlyPredictions.filter(x => x.City === city && x.Model === 'Linear regression' && x.Split === split);
+    const s = appendix(`${city} ${split.toLowerCase()} fits`,
+      'month_end_results/predictions.csv. Original monthly-fit values with complete standalone axes.',
+      'Day of year predicts daily mean temperature. Fitted curves use 281 training days; each month supplies seven held-out validation dates.');
+    scatterPlot(s, city, [
+      points('ERA5 data', actual, '#717D88', 3),
+      ...[['Linear regression', '#151C24'], ['NN 5', '#2375A6'], ['NN 10', '#D77D35'], ['NN 20', '#408B58']].map(([name, color]) =>
+        curve(name, monthlyPredictions.filter(x => x.City === city && x.Model === name), 'Predicted (C)', color)),
+    ]);
+    text(s, `${split} observations appear as dots. Every curve is fitted to the same training dates.\nAll dates are in 2009. The horizontal axis now shows the model’s numerical input, day of year.`,
+      60, 615, 1160, 64, 22, C.muted);
+  }
+}
+representation.push({ source: supplement('month_end_results', 'seasonal_fits.png').asset_path, represented_by: 'Four enlarged native fit plots' });
+
+for (const city of ['Chicago', 'San Diego']) {
+  const models = ['Linear regression', 'NN 5', 'NN 10', 'NN 20'];
+  const s = appendix(`${city} full MAE comparison`, 'month_end_results/model_comparison.csv',
+    'The original comparison includes the straight-line baseline and all three neural-network widths.');
+  chart(s, ['Linear', '5 neurons', '10 neurons', '20 neurons'], [
+    { name: 'Training', fill: C.blue, values: models.map(model => Number(monthly.find(x => x.City === city && x.Model === model)['Training MAE (C)'])) },
+    { name: 'Validation', fill: C.orange, values: models.map(model => Number(monthly.find(x => x.City === city && x.Model === model)['Validation MAE (C)'])) },
+  ], { left: 60, top: 145, width: 1160, height: 455 }, city === 'Chicago' ? 10 : 3.1, 'Model', 'MAE (C)');
+  text(s, 'The same monthly 2009 split applies to every model. Lower MAE is better.\nThe straight-line baseline has no explicit seasonal sine or cosine features.', 60, 615, 1160, 64, 22, C.muted);
+}
+representation.push({ source: supplement('month_end_results', 'training_validation_mae.png').asset_path, represented_by: 'Two enlarged native city comparisons' });
+
+for (const city of ['Chicago', 'San Diego']) {
+  for (const width of [5, 10, 20]) {
+    const rows = ensemblePredictions.filter(x => x.City === city && Number(x.Neurons) === width).map(x => ({
+      ...x,
+      'Upper (C)': Number(x['Ensemble (C)']) + Number(x['Member spread (C)']),
+      'Lower (C)': Number(x['Ensemble (C)']) - Number(x['Member spread (C)']),
+    }));
+    const s = appendix(`${city}, ${width} neurons, ensemble`, 'week6_ensemble_results/predictions.csv',
+      'The original mean-plus/minus-member-SD band is shown as upper and lower boundary curves. All numerical predictions and spreads are unchanged.');
+    scatterPlot(s, city, [
+      points('Training', rows.filter(x => x.Split === 'Training'), '#A9B2BA', 2),
+      points('Validation', rows.filter(x => x.Split === 'Validation'), '#151C24', 3),
+      curve('Seed 0', rows, 'Single (C)', C.orange),
+      curve('Mean of 5', rows, 'Ensemble (C)', C.blue),
+      curve('Mean + SD', rows, 'Upper (C)', '#8ABAD8', 1.6),
+      curve('Mean - SD', rows, 'Lower (C)', '#8ABAD8', 1.6),
+    ]);
+    text(s, 'Light blue bounds equal the ensemble mean plus or minus one member standard deviation.\nThey measure disagreement between initializations and are not calibrated forecast intervals.',
+      60, 615, 1160, 64, 22, C.muted);
+  }
+}
+representation.push({ source: supplement('week6_ensemble_results', 'ensemble_comparison.png').asset_path, represented_by: 'Six enlarged native ensemble plots with spread boundaries' });
+
+for (const city of ['Chicago', 'San Diego']) {
+  for (const split of ['Training', 'Validation']) {
+    const before = [5, 10, 20].map(width => regularization.find(x => x.City === city && Number(x.Neurons) === width && x.Version === 'Original'));
+    const after = [5, 10, 20].map(width => regularization.find(x => x.City === city && Number(x.Neurons) === width && x.Version === 'Selected'));
+    const s = appendix(`${city} ${split.toLowerCase()}, L2`, 'week6_regularization_results/comparison.csv',
+      'Before already uses alpha 0.0001. After selects the lowest validation MAE at each width, including the original setting.');
+    chart(s, ['5 neurons', '10 neurons', '20 neurons'], [
+      { name: 'Original alpha 0.0001', fill: C.gray, values: before.map(x => Number(x[`${split} MAE (C)`])) },
+      { name: 'Validation-selected alpha', fill: C.blue, values: after.map(x => Number(x[`${split} MAE (C)`])) },
+    ], { left: 60, top: 145, width: 1160, height: 455 }, city === 'Chicago' ? 3.3 : 1.6, 'Hidden neurons', `${split} MAE (C)`);
+    text(s, `Selected alpha for 5, 10 and 20 neurons: ${after.map(x => Number(x.Alpha).toString()).join(', ')}.\nIdentical pairs retain the original penalty. The validation data also choose the penalty.`,
+      60, 615, 1160, 64, 22, C.muted);
+  }
+}
+representation.push({ source: supplement('week6_regularization_results', 'before_after_l2.png').asset_path, represented_by: 'Four enlarged native before-and-after plots' });
+
+for (const city of ['Chicago', 'San Diego']) {
+  for (const width of [5, 10, 20]) {
+    const selectedAlpha = Number(regularization.find(x => x.City === city && Number(x.Neurons) === width && x.Version === 'Selected').Alpha);
+    const before = regularizationPredictions.filter(x => x.City === city && Number(x.Neurons) === width && Number(x.Alpha) === 0.0001);
+    const after = regularizationPredictions.filter(x => x.City === city && Number(x.Neurons) === width && Number(x.Alpha) === selectedAlpha);
+    const s = appendix(`${city}, ${width} neurons, L2 fits`, 'week6_regularization_results/predictions.csv',
+      'Original versus validation-selected penalty. Points show exactly the same observations as in the original figure.');
+    scatterPlot(s, city, [
+      points('Training', before.filter(x => x.Split === 'Training'), '#A9B2BA', 2),
+      points('Validation', before.filter(x => x.Split === 'Validation'), '#151C24', 3),
+      curve('Original alpha 0.0001', before, 'Predicted (C)', C.orange),
+      curve(`Selected alpha ${selectedAlpha}`, after, 'Predicted (C)', C.blue),
+    ]);
+    const interpretation = selectedAlpha === 0.0001
+      ? 'Original alpha 0.0001 retained. The fitted curves are identical.'
+      : city === 'Chicago'
+        ? 'Alpha 0.1: fits look similar. Validation MAE improves by only 0.009 C.'
+        : 'Alpha 0.001: validation MAE improves from 1.283 to 1.209 C.';
+    text(s, `${interpretation}\nAll fits use 281 training days and 84 month-end validation days in 2009.`,
+      60, 615, 1160, 64, 22, C.muted);
+  }
+}
+representation.push({ source: supplement('week6_regularization_results', 'seasonal_comparison.png').asset_path, represented_by: 'Six enlarged native original-versus-selected fits' });
+representation.push({ source: supplement('week6_regularization_results', 'alpha_validation_mae.png').asset_path, represented_by: 'Two enlarged native line charts on slide 8' });
+
+const weatherDetails = JSON.parse(await fs.readFile(path.join(WORKSPACE, 'assets/comparison_details.json'), 'utf8')).details;
+for (const detail of weatherDetails.filter(x => !/temperature/i.test(x.title))) {
+  const precipitation = /precipitation/i.test(detail.title);
+  const wind = /wind/i.test(detail.title);
+  const note = precipitation ? 'The original precipitation scaling remains unvalidated as daily rainfall totals.'
+    : wind ? 'Wind magnitude uses daily mean components, rather than mean hourly speed or gusts.'
+      : 'The original pressure values are shown in hectopascals.';
+  await appendixImage(detail, detail.title,
+    `Blue: daily values. Orange: monthly means. Both cities cover 2009–2010.\n${note}`);
+}
+representation.push({ source: notebookFigure(59).asset_path, represented_by: 'Four enlarged variable rows, including the temperature row on slide 1' });
+
+if (presentation.slides.items.length !== 36) throw new Error(`Expected36 slides, got${presentation.slides.items.length}`);
+const allSources = [...inventory.notebook_images.filter(x => x.cell_index >= 59), ...inventory.supplemental_images];
+const directSources = new Set(imageUsage.map(x => x.path));
+const represented = new Set([...directSources, ...representation.map(x => x.source)]);
+for (const source of allSources) if (!represented.has(source.asset_path)) throw new Error(`Missing source graph ${source.asset_path}`);
+await fs.writeFile(path.join(WORKSPACE, 'deck_readability_coverage.json'), JSON.stringify({
+  scope: 'Section 11, starting cell59, and later experiments', total_slides: 36, main_slides: 10,
+  source_figure_count: 13, representation, direct_images: imageUsage, slides: slideManifest,
+  native_chart_owner_slides: [...nativeChartOwners].sort((a,b) => a-b),
+}, null, 2));
+

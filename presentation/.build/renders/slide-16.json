@@ -1,0 +1,8 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/6ujyen","index":15,"layout":{"id":"ly/ahkn6hk7","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/bmpsv6pg","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Appendix 6: Full L2 before-and-after comparison","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/cnit4b61","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"week6_regularization_results/before_after_l2.png","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/xoraxg76","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"16","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/7y5cbqh8","kind":"image","position":{"left":272.41,"top":132,"width":735.19,"height":480},"fit":"contain","alt":"week6_regularization_results/before_after_l2.png"},
+{"id":"sh/za9szqpc","kind":"textbox","position":{"left":60,"top":630,"width":1160,"height":46},"text":"Before already uses alpha 0.0001. Four selected settings retain that original penalty.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

@@ -1,0 +1,11 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/85bgqc","index":8,"layout":{"id":"ly/5grytov6","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/m1c7etkz","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Testing an ensemble","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/943qpoja","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"week6_ensemble_results/scores.csv. Five fixed seeds, 0 through 4, averaged in Celsius.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/83upgj2p","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"9","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"ch/fit4zmhw","kind":"chart","position":{"left":60,"top":180,"width":825,"height":395},"chartType":"bar"},
+{"id":"sh/u5critkv","kind":"textbox","position":{"left":930,"top":185,"width":290,"height":130},"text":"Neither ensemble\nimproved the\nbest original MAE","style":{"fontSize":29,"typeface":"Arial","color":"#2375A6","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/h8nqt8jm","kind":"textbox","position":{"left":930,"top":368,"width":290,"height":135},"text":"Some weaker fits pull\nthe average away from\na good solution","style":{"fontSize":25,"typeface":"Arial","color":"#17324A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/w7e9k321","kind":"textbox","position":{"left":930,"top":530,"width":290,"height":106},"text":"The full curve and\nmember-spread plot\nappear in the appendix","style":{"fontSize":23,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ja58vi1c","kind":"textbox","position":{"left":60,"top":634,"width":1160,"height":42},"text":"Member disagreement measures initialization sensitivity. It is not a calibrated forecast interval.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

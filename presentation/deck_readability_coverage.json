@@ -1,0 +1,413 @@
+{
+  "scope": "Section 11, starting cell59, and later experiments",
+  "total_slides": 36,
+  "main_slides": 10,
+  "source_figure_count": 13,
+  "representation": [
+    {
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_17_cell_064_output_00.png",
+      "represented_by": [
+        "slide 5 Chicago view",
+        "slide 11 San Diego view"
+      ],
+      "reason": "Equivalent separate city plots of the same experiment"
+    },
+    {
+      "source": "/Users/amirsh96/290A/Project 1/month_end_results/seasonal_fits.png",
+      "represented_by": "Four enlarged native fit plots"
+    },
+    {
+      "source": "/Users/amirsh96/290A/Project 1/month_end_results/training_validation_mae.png",
+      "represented_by": "Two enlarged native city comparisons"
+    },
+    {
+      "source": "/Users/amirsh96/290A/Project 1/week6_ensemble_results/ensemble_comparison.png",
+      "represented_by": "Six enlarged native ensemble plots with spread boundaries"
+    },
+    {
+      "source": "/Users/amirsh96/290A/Project 1/week6_regularization_results/before_after_l2.png",
+      "represented_by": "Four enlarged native before-and-after plots"
+    },
+    {
+      "source": "/Users/amirsh96/290A/Project 1/week6_regularization_results/seasonal_comparison.png",
+      "represented_by": "Six enlarged native original-versus-selected fits"
+    },
+    {
+      "source": "/Users/amirsh96/290A/Project 1/week6_regularization_results/alpha_validation_mae.png",
+      "represented_by": "Two enlarged native line charts on slide 8"
+    },
+    {
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+      "represented_by": "Four enlarged variable rows, including the temperature row on slide 1"
+    }
+  ],
+  "direct_images": [
+    {
+      "slide": 1,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_temperature_labeled.png",
+      "sha256": "689b20a7e336b257c4384f6a1b0f566d5e708dd8b54ff720ba48f8a51e699b7f",
+      "cell": null,
+      "output": null,
+      "derivative_of": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png"
+    },
+    {
+      "slide": 2,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_12_cell_060_output_01.png",
+      "sha256": "2f2ff086458436e8432fbb9f8e9b7f88977859132f8ae977a16c9df2c16aeefd",
+      "cell": 60,
+      "output": 1
+    },
+    {
+      "slide": 3,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_13_cell_061_output_01.png",
+      "sha256": "930f77690fae9877ce09e95ece38ff4dfd999d9e55711caac76923f2743107a8",
+      "cell": 61,
+      "output": 1
+    },
+    {
+      "slide": 4,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_14_cell_062_output_00.png",
+      "sha256": "7a43b1bd709da7b948e70b9fb6cb903048c3817609294e317b42f18e447550fd",
+      "cell": 62,
+      "output": 0
+    },
+    {
+      "slide": 5,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_15_cell_063_output_00.png",
+      "sha256": "f46f972548cb4577fb4a53926f3e384310e6d8c5dc0ffdb8e5c5bd104cc98050",
+      "cell": 63,
+      "output": 0
+    },
+    {
+      "slide": 11,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_16_cell_063_output_01.png",
+      "sha256": "55431763c0be414df3ea26bd019f1b8d8f2853453bc464e7ace4f03bfcb6547e",
+      "cell": 63,
+      "output": 1
+    },
+    {
+      "slide": 34,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_precipitation_labeled.png",
+      "sha256": "f094c0cb8965c4fae334f7e4522a6d1f56d47faa97bbee16fefb3beeec7ed02d",
+      "cell": null,
+      "output": null,
+      "derivative_of": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png"
+    },
+    {
+      "slide": 35,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_pressure_labeled.png",
+      "sha256": "0cffeb3eb4c4df30df54eb283efa23ceaddf9422e263cb80f1c8488813ec8a48",
+      "cell": null,
+      "output": null,
+      "derivative_of": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png"
+    },
+    {
+      "slide": 36,
+      "path": "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_wind.png",
+      "sha256": "fdd715419e1f1b64130f73d2c654a40f9b0a453335a457584f093a1018cf17f1",
+      "cell": null,
+      "output": null,
+      "derivative_of": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png"
+    }
+  ],
+  "slides": [
+    {
+      "number": 1,
+      "title": "Chicago and San Diego weather patterns",
+      "appendix": false,
+      "source": "ERA5 course data, 2009–2010. Notebook Section 11, cell 59.",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_temperature_labeled.png"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Contrasting temperature patterns",
+      "appendix": false,
+      "source": "Notebook cell 60. Statistics describe daily mean temperatures in this two-year sample.",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_12_cell_060_output_01.png"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Exploring a precipitation event",
+      "appendix": false,
+      "source": "Notebook cell 61. Region means use the rectangular study area, without a country mask.",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_13_cell_061_output_01.png"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Next-day temperature forecasting",
+      "appendix": false,
+      "source": "Saved notebook cell 62 results. 542 training examples and 181 later test examples.",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_14_cell_062_output_00.png"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Learning the seasonal temperature pattern",
+      "appendix": false,
+      "source": "Notebook cells 63–64. Chicago view shown. The San Diego view follows in the appendix.",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_15_cell_063_output_00.png"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Monthly validation and network size",
+      "appendix": false,
+      "source": "month_end_results/model_comparison.csv. Same dates, preprocessing and seed for every width.",
+      "images": []
+    },
+    {
+      "number": 7,
+      "title": "Tuning the L2 weight penalty",
+      "appendix": false,
+      "source": "week6_regularization_results/comparison.csv. San Diego, 10 neurons, same monthly split and seed.",
+      "images": []
+    },
+    {
+      "number": 8,
+      "title": "Penalty strength and sensitivity",
+      "appendix": false,
+      "source": "week6_regularization_results/all_scores.csv. Original values with larger editable labels.",
+      "images": []
+    },
+    {
+      "number": 9,
+      "title": "Testing an ensemble",
+      "appendix": false,
+      "source": "week6_ensemble_results/scores.csv. Five fixed seeds, 0 through 4, averaged in Celsius.",
+      "images": []
+    },
+    {
+      "number": 10,
+      "title": "What the analysis establishes",
+      "appendix": false,
+      "source": "Synthesis of Section 11 and later validation experiments. Full original figures follow in the appendix.",
+      "images": []
+    },
+    {
+      "number": 11,
+      "title": "Appendix 1: San Diego seasonal model",
+      "appendix": true,
+      "source": "presentation/assets/notebook_16_cell_063_output_01.png",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_16_cell_063_output_01.png"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Appendix 2: Chicago training fits",
+      "appendix": true,
+      "source": "month_end_results/predictions.csv. Original monthly-fit values with complete standalone axes.",
+      "images": []
+    },
+    {
+      "number": 13,
+      "title": "Appendix 3: Chicago validation fits",
+      "appendix": true,
+      "source": "month_end_results/predictions.csv. Original monthly-fit values with complete standalone axes.",
+      "images": []
+    },
+    {
+      "number": 14,
+      "title": "Appendix 4: San Diego training fits",
+      "appendix": true,
+      "source": "month_end_results/predictions.csv. Original monthly-fit values with complete standalone axes.",
+      "images": []
+    },
+    {
+      "number": 15,
+      "title": "Appendix 5: San Diego validation fits",
+      "appendix": true,
+      "source": "month_end_results/predictions.csv. Original monthly-fit values with complete standalone axes.",
+      "images": []
+    },
+    {
+      "number": 16,
+      "title": "Appendix 6: Chicago full MAE comparison",
+      "appendix": true,
+      "source": "month_end_results/model_comparison.csv",
+      "images": []
+    },
+    {
+      "number": 17,
+      "title": "Appendix 7: San Diego full MAE comparison",
+      "appendix": true,
+      "source": "month_end_results/model_comparison.csv",
+      "images": []
+    },
+    {
+      "number": 18,
+      "title": "Appendix 8: Chicago, 5 neurons, ensemble",
+      "appendix": true,
+      "source": "week6_ensemble_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 19,
+      "title": "Appendix 9: Chicago, 10 neurons, ensemble",
+      "appendix": true,
+      "source": "week6_ensemble_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 20,
+      "title": "Appendix 10: Chicago, 20 neurons, ensemble",
+      "appendix": true,
+      "source": "week6_ensemble_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 21,
+      "title": "Appendix 11: San Diego, 5 neurons, ensemble",
+      "appendix": true,
+      "source": "week6_ensemble_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 22,
+      "title": "Appendix 12: San Diego, 10 neurons, ensemble",
+      "appendix": true,
+      "source": "week6_ensemble_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 23,
+      "title": "Appendix 13: San Diego, 20 neurons, ensemble",
+      "appendix": true,
+      "source": "week6_ensemble_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 24,
+      "title": "Appendix 14: Chicago training, L2",
+      "appendix": true,
+      "source": "week6_regularization_results/comparison.csv",
+      "images": []
+    },
+    {
+      "number": 25,
+      "title": "Appendix 15: Chicago validation, L2",
+      "appendix": true,
+      "source": "week6_regularization_results/comparison.csv",
+      "images": []
+    },
+    {
+      "number": 26,
+      "title": "Appendix 16: San Diego training, L2",
+      "appendix": true,
+      "source": "week6_regularization_results/comparison.csv",
+      "images": []
+    },
+    {
+      "number": 27,
+      "title": "Appendix 17: San Diego validation, L2",
+      "appendix": true,
+      "source": "week6_regularization_results/comparison.csv",
+      "images": []
+    },
+    {
+      "number": 28,
+      "title": "Appendix 18: Chicago, 5 neurons, L2 fits",
+      "appendix": true,
+      "source": "week6_regularization_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 29,
+      "title": "Appendix 19: Chicago, 10 neurons, L2 fits",
+      "appendix": true,
+      "source": "week6_regularization_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 30,
+      "title": "Appendix 20: Chicago, 20 neurons, L2 fits",
+      "appendix": true,
+      "source": "week6_regularization_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 31,
+      "title": "Appendix 21: San Diego, 5 neurons, L2 fits",
+      "appendix": true,
+      "source": "week6_regularization_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 32,
+      "title": "Appendix 22: San Diego, 10 neurons, L2 fits",
+      "appendix": true,
+      "source": "week6_regularization_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 33,
+      "title": "Appendix 23: San Diego, 20 neurons, L2 fits",
+      "appendix": true,
+      "source": "week6_regularization_results/predictions.csv",
+      "images": []
+    },
+    {
+      "number": 34,
+      "title": "Appendix 24: Precipitation comparison",
+      "appendix": true,
+      "source": "presentation/assets/comparison_detail_precipitation_labeled.png",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_precipitation_labeled.png"
+      ]
+    },
+    {
+      "number": 35,
+      "title": "Appendix 25: Pressure comparison",
+      "appendix": true,
+      "source": "presentation/assets/comparison_detail_pressure_labeled.png",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_pressure_labeled.png"
+      ]
+    },
+    {
+      "number": 36,
+      "title": "Appendix 26: Wind comparison",
+      "appendix": true,
+      "source": "presentation/assets/comparison_detail_wind.png",
+      "images": [
+        "/Users/amirsh96/290A/Project 1/presentation/assets/comparison_detail_wind.png"
+      ]
+    }
+  ],
+  "native_chart_owner_slides": [
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ]
+}

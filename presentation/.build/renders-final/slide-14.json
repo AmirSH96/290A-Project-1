@@ -1,0 +1,8 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/qbeklc","index":13,"layout":{"id":"ly/wfq9sj65","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/o3ahkrih","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Appendix 4: Full monthly MAE comparison","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3210bmhc","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"month_end_results/training_validation_mae.png","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/218zi10r","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"14","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/w3mls7ml","kind":"image","position":{"left":60,"top":178.67,"width":1160,"height":386.67},"fit":"contain","alt":"month_end_results/training_validation_mae.png"},
+{"id":"sh/gzqhgril","kind":"textbox","position":{"left":60,"top":630,"width":1160,"height":46},"text":"Original monthly comparison, including the straight-line baseline. Calendar-only seasonal reconstruction.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

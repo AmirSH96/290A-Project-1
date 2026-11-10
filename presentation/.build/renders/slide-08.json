@@ -1,0 +1,9 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/cmq5nd","index":7,"layout":{"id":"ly/ahkn6hk7","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/q5sre18f","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Penalty strength and sensitivity","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/dsjqpgr6","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"week6_regularization_results/alpha_validation_mae.png. One initialization per point.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/sra9gbql","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"8","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/qdorql07","kind":"image","position":{"left":60,"top":167.67,"width":1160,"height":386.67},"fit":"contain","alt":"week6_regularization_results/alpha_validation_mae.png"},
+{"id":"sh/i1srah8j","kind":"textbox","position":{"left":60,"top":590,"width":1160,"height":44},"text":"Stronger penalties do not steadily improve validation MAE.","style":{"fontSize":28,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/54jqlwru","kind":"textbox","position":{"left":60,"top":637,"width":1160,"height":40},"text":"The San Diego spike shows sensitivity of the fitted solution. A single curve does not establish a universal ranking.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

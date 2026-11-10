@@ -1,0 +1,368 @@
+{
+  "panels": [
+    {
+      "group": "monthly_seasonal",
+      "title": "Monthly seasonal fit: Chicago training",
+      "city": "Chicago",
+      "neurons": null,
+      "split": "Training",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_monthly_chicago_training.png",
+      "width": 1308,
+      "height": 684,
+      "sha256": "93cf59307746222e1fd972ae759d04e455d670efe01753790813c72726f6ee3b",
+      "derived_from": "/Users/amirsh96/290A/Project 1/month_end_results/seasonal_fits.png",
+      "source_sha256": "19057285d72f4b3aa2d157f1d9fa40a7d34c3bf2abb78759cf0f5aca4c78cdfb",
+      "crop_bounds": [
+        0,
+        58,
+        1308,
+        742
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: black=linear regression; blue=NN5; orange=NN10; green=NN20; gray=ERA5 data.",
+      "shared_axis_note": "Training and validation panels share the city-specific y scale."
+    },
+    {
+      "group": "monthly_seasonal",
+      "title": "Monthly seasonal fit: Chicago validation",
+      "city": "Chicago",
+      "neurons": null,
+      "split": "Validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_monthly_chicago_validation.png",
+      "width": 1252,
+      "height": 684,
+      "sha256": "1a42762914a51a4965683c26e1936fe2cd7e10a4354c0d1a9ac5322212b61f63",
+      "derived_from": "/Users/amirsh96/290A/Project 1/month_end_results/seasonal_fits.png",
+      "source_sha256": "19057285d72f4b3aa2d157f1d9fa40a7d34c3bf2abb78759cf0f5aca4c78cdfb",
+      "crop_bounds": [
+        1308,
+        58,
+        2560,
+        742
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: black=linear regression; blue=NN5; orange=NN10; green=NN20; gray=ERA5 data.",
+      "shared_axis_note": "Training and validation panels share the city-specific y scale. Right-column validation panels originally omit numeric y ticklabels; units and tickmarks remain visible."
+    },
+    {
+      "group": "monthly_seasonal",
+      "title": "Monthly seasonal fit: San Diego training",
+      "city": "San Diego",
+      "neurons": null,
+      "split": "Training",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_monthly_san_diego_training.png",
+      "width": 1308,
+      "height": 698,
+      "sha256": "c20b5b3e51a0b8d96c635fcdd652b1aff559eb03d14d4398431b715bf4ccc42d",
+      "derived_from": "/Users/amirsh96/290A/Project 1/month_end_results/seasonal_fits.png",
+      "source_sha256": "19057285d72f4b3aa2d157f1d9fa40a7d34c3bf2abb78759cf0f5aca4c78cdfb",
+      "crop_bounds": [
+        0,
+        742,
+        1308,
+        1440
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: black=linear regression; blue=NN5; orange=NN10; green=NN20; gray=ERA5 data.",
+      "shared_axis_note": "Training and validation panels share the city-specific y scale."
+    },
+    {
+      "group": "monthly_seasonal",
+      "title": "Monthly seasonal fit: San Diego validation",
+      "city": "San Diego",
+      "neurons": null,
+      "split": "Validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_monthly_san_diego_validation.png",
+      "width": 1252,
+      "height": 698,
+      "sha256": "08b565792c59d9a6fcd1257441c197e91b9474c1f757908e6eb867baeaa88661",
+      "derived_from": "/Users/amirsh96/290A/Project 1/month_end_results/seasonal_fits.png",
+      "source_sha256": "19057285d72f4b3aa2d157f1d9fa40a7d34c3bf2abb78759cf0f5aca4c78cdfb",
+      "crop_bounds": [
+        1308,
+        742,
+        2560,
+        1440
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: black=linear regression; blue=NN5; orange=NN10; green=NN20; gray=ERA5 data.",
+      "shared_axis_note": "Training and validation panels share the city-specific y scale. Right-column validation panels originally omit numeric y ticklabels; units and tickmarks remain visible."
+    },
+    {
+      "group": "ensemble",
+      "title": "Ensemble fit: Chicago, 5 neurons",
+      "city": "Chicago",
+      "neurons": 5,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_ensemble_chicago_05.png",
+      "width": 889,
+      "height": 552,
+      "sha256": "4cd983049a88553b9678bc67a71283785c4905519e487b63524828f939d2fd3f",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_ensemble_results/ensemble_comparison.png",
+      "source_sha256": "27d1c05daddaf484a169a75ed32a424f3753675113424d5afc945286672bfae2",
+      "crop_bounds": [
+        0,
+        56,
+        889,
+        608
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible only in Chicago5 panel in the source. All panels: lightgray dots=training data; dark dots=validation data; orange=seed0; blue=five-network mean; shadedblue=mean plus/minus1memberSD, not a calibrated interval.",
+      "shared_axis_note": "Numeric y ticklabels are visible; the same city-specific y scale applies to the other two widths. Top-row calendar ticklabels are omitted in the source because columns share x axes; Monthin2009 axislabel remains visible. Bottomrow uses Jan/Apr/Jul/Oct."
+    },
+    {
+      "group": "ensemble",
+      "title": "Ensemble fit: Chicago, 10 neurons",
+      "city": "Chicago",
+      "neurons": 10,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_ensemble_chicago_10.png",
+      "width": 824,
+      "height": 552,
+      "sha256": "edcbe76a509af97d5e3611f3613487d2d4ed456a6da66025c1fdaec73c688ea1",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_ensemble_results/ensemble_comparison.png",
+      "source_sha256": "27d1c05daddaf484a169a75ed32a424f3753675113424d5afc945286672bfae2",
+      "crop_bounds": [
+        889,
+        56,
+        1713,
+        608
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible only in Chicago5 panel in the source. All panels: lightgray dots=training data; dark dots=validation data; orange=seed0; blue=five-network mean; shadedblue=mean plus/minus1memberSD, not a calibrated interval.",
+      "shared_axis_note": "Numeric y ticklabels are omitted in this source column because the city row shares a y scale; unitlabel and tickmarks remain visible. Top-row calendar ticklabels are omitted in the source because columns share x axes; Monthin2009 axislabel remains visible. Bottomrow uses Jan/Apr/Jul/Oct."
+    },
+    {
+      "group": "ensemble",
+      "title": "Ensemble fit: Chicago, 20 neurons",
+      "city": "Chicago",
+      "neurons": 20,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_ensemble_chicago_20.png",
+      "width": 837,
+      "height": 552,
+      "sha256": "e0fc5e56f813b1e96590ceb4041568318863abbb9074d0e117840810839bae25",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_ensemble_results/ensemble_comparison.png",
+      "source_sha256": "27d1c05daddaf484a169a75ed32a424f3753675113424d5afc945286672bfae2",
+      "crop_bounds": [
+        1713,
+        56,
+        2550,
+        608
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible only in Chicago5 panel in the source. All panels: lightgray dots=training data; dark dots=validation data; orange=seed0; blue=five-network mean; shadedblue=mean plus/minus1memberSD, not a calibrated interval.",
+      "shared_axis_note": "Numeric y ticklabels are omitted in this source column because the city row shares a y scale; unitlabel and tickmarks remain visible. Top-row calendar ticklabels are omitted in the source because columns share x axes; Monthin2009 axislabel remains visible. Bottomrow uses Jan/Apr/Jul/Oct."
+    },
+    {
+      "group": "ensemble",
+      "title": "Ensemble fit: San Diego, 5 neurons",
+      "city": "San Diego",
+      "neurons": 5,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_ensemble_san_diego_05.png",
+      "width": 889,
+      "height": 592,
+      "sha256": "af9e8ba60aff49fc679499aa5cc1c8b219ffbd2c86d104f2a44c085e22887256",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_ensemble_results/ensemble_comparison.png",
+      "source_sha256": "27d1c05daddaf484a169a75ed32a424f3753675113424d5afc945286672bfae2",
+      "crop_bounds": [
+        0,
+        608,
+        889,
+        1200
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible only in Chicago5 panel in the source. All panels: lightgray dots=training data; dark dots=validation data; orange=seed0; blue=five-network mean; shadedblue=mean plus/minus1memberSD, not a calibrated interval.",
+      "shared_axis_note": "Numeric y ticklabels are visible; the same city-specific y scale applies to the other two widths. Calendar ticks Jan/Apr/Jul/Oct and Monthin2009 axislabel remain visible."
+    },
+    {
+      "group": "ensemble",
+      "title": "Ensemble fit: San Diego, 10 neurons",
+      "city": "San Diego",
+      "neurons": 10,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_ensemble_san_diego_10.png",
+      "width": 824,
+      "height": 592,
+      "sha256": "2fb3dfedbe7f168f1392b2220e75d479ab00ab05257880fe6e4916451e2cdc77",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_ensemble_results/ensemble_comparison.png",
+      "source_sha256": "27d1c05daddaf484a169a75ed32a424f3753675113424d5afc945286672bfae2",
+      "crop_bounds": [
+        889,
+        608,
+        1713,
+        1200
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible only in Chicago5 panel in the source. All panels: lightgray dots=training data; dark dots=validation data; orange=seed0; blue=five-network mean; shadedblue=mean plus/minus1memberSD, not a calibrated interval.",
+      "shared_axis_note": "Numeric y ticklabels are omitted in this source column because the city row shares a y scale; unitlabel and tickmarks remain visible. Calendar ticks Jan/Apr/Jul/Oct and Monthin2009 axislabel remain visible."
+    },
+    {
+      "group": "ensemble",
+      "title": "Ensemble fit: San Diego, 20 neurons",
+      "city": "San Diego",
+      "neurons": 20,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_ensemble_san_diego_20.png",
+      "width": 837,
+      "height": 592,
+      "sha256": "3e91c75a9a10ba18eb76a61eea84094b7ec434216ecd5e859bbc5b05950abfc8",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_ensemble_results/ensemble_comparison.png",
+      "source_sha256": "27d1c05daddaf484a169a75ed32a424f3753675113424d5afc945286672bfae2",
+      "crop_bounds": [
+        1713,
+        608,
+        2550,
+        1200
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible only in Chicago5 panel in the source. All panels: lightgray dots=training data; dark dots=validation data; orange=seed0; blue=five-network mean; shadedblue=mean plus/minus1memberSD, not a calibrated interval.",
+      "shared_axis_note": "Numeric y ticklabels are omitted in this source column because the city row shares a y scale; unitlabel and tickmarks remain visible. Calendar ticks Jan/Apr/Jul/Oct and Monthin2009 axislabel remain visible."
+    },
+    {
+      "group": "l2_seasonal",
+      "title": "L2 seasonal fit: Chicago, 5 neurons",
+      "city": "Chicago",
+      "neurons": 5,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_l2_chicago_05.png",
+      "width": 889,
+      "height": 552,
+      "sha256": "c15c5edf4162df4ded4b1281e051966d4568855d86cbdf101266cebb2431867a",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_regularization_results/seasonal_comparison.png",
+      "source_sha256": "e113f090da37d9050680fa27b412236cfe1302b81694cb1d8b6df78364ceff81",
+      "crop_bounds": [
+        0,
+        56,
+        889,
+        608
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: lightgray dots=training data; dark dots=validation data; dashedorange=original alpha0.0001; solidblue=validation-selected alpha as labeled.",
+      "shared_axis_note": "Numeric y ticklabels are visible; the same city-specific y scale applies to the other two widths. Top-row calendar ticklabels are omitted in the source because columns share x axes; Monthin2009 axislabel remains visible. Bottomrow uses Jan/Apr/Jul/Oct."
+    },
+    {
+      "group": "l2_seasonal",
+      "title": "L2 seasonal fit: Chicago, 10 neurons",
+      "city": "Chicago",
+      "neurons": 10,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_l2_chicago_10.png",
+      "width": 824,
+      "height": 552,
+      "sha256": "32eb29e287c1ad48e73a7ddbf0d7a5ad85c67f107563b23933339193e46ed128",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_regularization_results/seasonal_comparison.png",
+      "source_sha256": "e113f090da37d9050680fa27b412236cfe1302b81694cb1d8b6df78364ceff81",
+      "crop_bounds": [
+        889,
+        56,
+        1713,
+        608
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: lightgray dots=training data; dark dots=validation data; dashedorange=original alpha0.0001; solidblue=validation-selected alpha as labeled.",
+      "shared_axis_note": "Numeric y ticklabels are omitted in this source column because the city row shares a y scale; unitlabel and tickmarks remain visible. Top-row calendar ticklabels are omitted in the source because columns share x axes; Monthin2009 axislabel remains visible. Bottomrow uses Jan/Apr/Jul/Oct."
+    },
+    {
+      "group": "l2_seasonal",
+      "title": "L2 seasonal fit: Chicago, 20 neurons",
+      "city": "Chicago",
+      "neurons": 20,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_l2_chicago_20.png",
+      "width": 837,
+      "height": 552,
+      "sha256": "281a1ae660d40056e69b471e2dc245fc71b7d9c9c0c90a6f8de875550fc13bce",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_regularization_results/seasonal_comparison.png",
+      "source_sha256": "e113f090da37d9050680fa27b412236cfe1302b81694cb1d8b6df78364ceff81",
+      "crop_bounds": [
+        1713,
+        56,
+        2550,
+        608
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: lightgray dots=training data; dark dots=validation data; dashedorange=original alpha0.0001; solidblue=validation-selected alpha as labeled.",
+      "shared_axis_note": "Numeric y ticklabels are omitted in this source column because the city row shares a y scale; unitlabel and tickmarks remain visible. Top-row calendar ticklabels are omitted in the source because columns share x axes; Monthin2009 axislabel remains visible. Bottomrow uses Jan/Apr/Jul/Oct."
+    },
+    {
+      "group": "l2_seasonal",
+      "title": "L2 seasonal fit: San Diego, 5 neurons",
+      "city": "San Diego",
+      "neurons": 5,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_l2_san_diego_05.png",
+      "width": 889,
+      "height": 592,
+      "sha256": "4cd6683e53920a9441b3007aa81da5cb139a231b70d90f74bd9f3c3da292259b",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_regularization_results/seasonal_comparison.png",
+      "source_sha256": "e113f090da37d9050680fa27b412236cfe1302b81694cb1d8b6df78364ceff81",
+      "crop_bounds": [
+        0,
+        608,
+        889,
+        1200
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: lightgray dots=training data; dark dots=validation data; dashedorange=original alpha0.0001; solidblue=validation-selected alpha as labeled.",
+      "shared_axis_note": "Numeric y ticklabels are visible; the same city-specific y scale applies to the other two widths. Calendar ticks Jan/Apr/Jul/Oct and Monthin2009 axislabel remain visible."
+    },
+    {
+      "group": "l2_seasonal",
+      "title": "L2 seasonal fit: San Diego, 10 neurons",
+      "city": "San Diego",
+      "neurons": 10,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_l2_san_diego_10.png",
+      "width": 824,
+      "height": 592,
+      "sha256": "15a795ee3cb61993878c8deca3aa50bede50c39de2c222e216a18140934263b8",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_regularization_results/seasonal_comparison.png",
+      "source_sha256": "e113f090da37d9050680fa27b412236cfe1302b81694cb1d8b6df78364ceff81",
+      "crop_bounds": [
+        889,
+        608,
+        1713,
+        1200
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: lightgray dots=training data; dark dots=validation data; dashedorange=original alpha0.0001; solidblue=validation-selected alpha as labeled.",
+      "shared_axis_note": "Numeric y ticklabels are omitted in this source column because the city row shares a y scale; unitlabel and tickmarks remain visible. Calendar ticks Jan/Apr/Jul/Oct and Monthin2009 axislabel remain visible."
+    },
+    {
+      "group": "l2_seasonal",
+      "title": "L2 seasonal fit: San Diego, 20 neurons",
+      "city": "San Diego",
+      "neurons": 20,
+      "split": "Training and validation",
+      "asset_path": "/Users/amirsh96/290A/Project 1/presentation/assets/panel_l2_san_diego_20.png",
+      "width": 837,
+      "height": 592,
+      "sha256": "d4212f96105a7483780c675060aab4e2177882f2a2a164c3dd4194c9bb8e95cf",
+      "derived_from": "/Users/amirsh96/290A/Project 1/week6_regularization_results/seasonal_comparison.png",
+      "source_sha256": "e113f090da37d9050680fa27b412236cfe1302b81694cb1d8b6df78364ceff81",
+      "crop_bounds": [
+        1713,
+        608,
+        2550,
+        1200
+      ],
+      "date_range": "2009-01-01 through 2009-12-31",
+      "legend_note": "Visible in every panel: lightgray dots=training data; dark dots=validation data; dashedorange=original alpha0.0001; solidblue=validation-selected alpha as labeled.",
+      "shared_axis_note": "Numeric y ticklabels are omitted in this source column because the city row shares a y scale; unitlabel and tickmarks remain visible. Calendar ticks Jan/Apr/Jul/Oct and Monthin2009 axislabel remain visible."
+    }
+  ],
+  "panel_count": 16,
+  "groups": {
+    "monthly_seasonal": 4,
+    "ensemble": 6,
+    "l2_seasonal": 6
+  },
+  "notes": [
+    "All16assets are exactpixelrectangularcrops of saved sourceplots; no resampling, data replotting, recoloring, or sourceimage modification occurred.",
+    "Global suptitles are excluded entirely; all per-panel titles, axes, units, ticks, and visible legends are retained.",
+    "Shared legend/axis dependencies are documented per panel for native slide captions.",
+    "Monthly panels compare seasonal reconstruction on281training/84validationdays; ensemble and L2 panels use that same split."
+  ]
+}

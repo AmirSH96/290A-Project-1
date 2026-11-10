@@ -1,0 +1,11 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/o62i1w","index":6,"layout":{"id":"ly/5grytov6","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/y907mpsj","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Tuning the L2 weight penalty","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/lcb6hkra","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"week6_regularization_results/comparison.csv. San Diego, 10 neurons, same monthly split and seed.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/kb2pofap","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"7","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"ch/nqtc7qx0","kind":"chart","position":{"left":60,"top":180,"width":825,"height":392},"chartType":"bar"},
+{"id":"sh/al07i5sn","kind":"textbox","position":{"left":930,"top":175,"width":290,"height":110},"text":"A stronger penalty\ndiscourages large weights","style":{"fontSize":28,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/x8r6dkry","kind":"textbox","position":{"left":930,"top":340,"width":290,"height":100},"text":"Validation MAE\n5.8% lower","style":{"fontSize":32,"typeface":"Arial","color":"#2375A6","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/wnipkfad","kind":"textbox","position":{"left":930,"top":490,"width":290,"height":110},"text":"Training error rises\nslightly as validation\nerror falls","style":{"fontSize":25,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/vidonu9c","kind":"textbox","position":{"left":60,"top":632,"width":1160,"height":44},"text":"The original best overall MAEs remain unchanged. Four of six models retain the original penalty.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

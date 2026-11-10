@@ -1,0 +1,8 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/77gfrv","index":16,"layout":{"id":"ly/dsn6dc7y","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/fmhg7y50","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Appendix 7: San Diego full MAE comparison","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/gnqxg36l","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"month_end_results/model_comparison.csv","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/hojy98n6","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"17","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"ch/a9o76hwb","kind":"chart","position":{"left":60,"top":145,"width":1160,"height":455},"chartType":"bar"},
+{"id":"sh/7ihg3y54","kind":"textbox","position":{"left":60,"top":615,"width":1160,"height":64},"text":"The same monthly 2009 split applies to every model. Lower MAE is better.\nThe straight-line baseline has no explicit seasonal sine or cosine features.","style":{"fontSize":22,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

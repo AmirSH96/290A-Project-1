@@ -1,0 +1,87 @@
+{
+  "slide_count": 15,
+  "original_figure_groups": [
+    {
+      "slide": 1,
+      "title": "Chicago and San Diego weather comparison",
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_11_cell_059_output_00.png",
+      "sha256": "23deb4c42aea45e0591d24e33797f215edf31e679f5144e76e3cb358aacb727c"
+    },
+    {
+      "slide": 2,
+      "title": "Temperature patterns and sample maxima",
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_12_cell_060_output_01.png",
+      "sha256": "2f2ff086458436e8432fbb9f8e9b7f88977859132f8ae977a16c9df2c16aeefd"
+    },
+    {
+      "slide": 3,
+      "title": "Exploring a precipitation event",
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_13_cell_061_output_01.png",
+      "sha256": "930f77690fae9877ce09e95ece38ff4dfd999d9e55711caac76923f2743107a8"
+    },
+    {
+      "slide": 4,
+      "title": "Predicting tomorrow’s temperature",
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_14_cell_062_output_00.png",
+      "sha256": "7a43b1bd709da7b948e70b9fb6cb903048c3817609294e317b42f18e447550fd"
+    },
+    {
+      "slide": 5,
+      "title": "Chicago seasonal prediction",
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_15_cell_063_output_00.png",
+      "sha256": "f46f972548cb4577fb4a53926f3e384310e6d8c5dc0ffdb8e5c5bd104cc98050"
+    },
+    {
+      "slide": 6,
+      "title": "San Diego seasonal prediction",
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_16_cell_063_output_01.png",
+      "sha256": "55431763c0be414df3ea26bd019f1b8d8f2853453bc464e7ace4f03bfcb6547e"
+    },
+    {
+      "slide": 7,
+      "title": "Seasonal prediction in both cities",
+      "source": "/Users/amirsh96/290A/Project 1/presentation/assets/notebook_17_cell_064_output_00.png",
+      "sha256": "6bc5a615b8dfa5ad869e35dffd01672533099ccdc6d72ab6e4b48e5f546e31ce"
+    },
+    {
+      "slide": 8,
+      "title": "Monthly validation: 5, 10 and 20 neurons",
+      "source": "/Users/amirsh96/290A/Project 1/month_end_results/seasonal_fits.png",
+      "sha256": "19057285d72f4b3aa2d157f1d9fa40a7d34c3bf2abb78759cf0f5aca4c78cdfb"
+    },
+    {
+      "slide": 9,
+      "title": "Training and validation errors",
+      "source": "/Users/amirsh96/290A/Project 1/month_end_results/training_validation_mae.png",
+      "sha256": "3b3a22630f968169584f6793de355ef3a717d084a8a61e6f5cbea2a13b6a88b4"
+    },
+    {
+      "slide": 10,
+      "title": "Comparing single networks and ensembles",
+      "source": "/Users/amirsh96/290A/Project 1/week6_ensemble_results/ensemble_comparison.png",
+      "sha256": "27d1c05daddaf484a169a75ed32a424f3753675113424d5afc945286672bfae2"
+    },
+    {
+      "slide": 11,
+      "title": "Effect of L2 penalty strength",
+      "source": "/Users/amirsh96/290A/Project 1/week6_regularization_results/alpha_validation_mae.png",
+      "sha256": "be1fdeff38afffe59d3a7681cbeb0ac6fd88b3101ee0661ed9e63784b5f26d65"
+    },
+    {
+      "slide": 12,
+      "title": "Seasonal fits before and after L2 tuning",
+      "source": "/Users/amirsh96/290A/Project 1/week6_regularization_results/seasonal_comparison.png",
+      "sha256": "e113f090da37d9050680fa27b412236cfe1302b81694cb1d8b6df78364ceff81"
+    },
+    {
+      "slide": 13,
+      "title": "Before and after L2: error comparison",
+      "source": "/Users/amirsh96/290A/Project 1/week6_regularization_results/before_after_l2.png",
+      "sha256": "ce51372c9056e3fbe3c41496b8fcfb1523cee58fc93eb431c5e2358ecbe0533f"
+    }
+  ],
+  "closing_slides": [
+    14,
+    15
+  ]
+}

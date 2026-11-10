@@ -1,0 +1,11 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/hovkph","index":3,"layout":{"id":"ly/ahkn6hk7","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/8fu5cvep","kind":"textbox","position":{"left":60,"top":40,"width":1160,"height":68},"text":"Next-day temperature forecasting","style":{"fontSize":44,"typeface":"Arial","color":"#17324A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/7el43qdk","kind":"textbox","position":{"left":60,"top":682,"width":1080,"height":24},"text":"Saved notebook cell 62 results. 542 training examples and 181 later test examples.","style":{"fontSize":14,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/mdcnalwz","kind":"textbox","position":{"left":1160,"top":682,"width":60,"height":24},"text":"4","style":{"fontSize":16,"typeface":"Arial","color":"#596C7D","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"sh/hk369kvm","kind":"textbox","position":{"left":60,"top":126,"width":1160,"height":50},"text":"Current and recent weather predict tomorrow’s temperature","style":{"fontSize":27,"typeface":"Arial","color":"#17324A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/5kne5gju","kind":"image","position":{"left":60,"top":191.68,"width":1160,"height":326.64},"fit":"contain","alt":"Next-day forecast model comparison"},
+{"id":"sh/vilo7adg","kind":"textbox","position":{"left":60,"top":553,"width":570,"height":78},"text":"Chicago: linear and NN MAE both about 1.46 C","style":{"fontSize":26,"typeface":"Arial","color":"#2375A6","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/uhcne5wv","kind":"textbox","position":{"left":680,"top":553,"width":540,"height":78},"text":"San Diego: linear 0.63 C, NN 0.68 C","style":{"fontSize":26,"typeface":"Arial","color":"#D77D35","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/58n6dkvi","kind":"textbox","position":{"left":60,"top":636,"width":1160,"height":40},"text":"A chronological forecast task. Its errors answer a different question from the seasonal models.","style":{"fontSize":21,"typeface":"Arial","color":"#596C7D","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}
