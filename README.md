@@ -2,7 +2,7 @@
 
 This project compares weather patterns in Chicago and San Diego and tests how neural-network width and L2 regularization affect seasonal temperature estimates.
 
-[Presentation Link](https://your-presentation-url.com)
+[Presentation Link](https://docs.google.com/videos/u/0/d/1S5Nh2gUmm-7bIDSSCVMxLXWdoGhODzroPLY48qjKS14/play?usp=chrome_extension_sharing)
 
 ## Data and analysis
 
